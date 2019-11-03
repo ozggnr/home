@@ -11,4 +11,4 @@ python:
  
  script:
  - python3 hwk7.py --help
- - python3 hwk7.py diabetes.data ' ' -i
+ - python3 hwk7.py diabetes.data ' ' -p
