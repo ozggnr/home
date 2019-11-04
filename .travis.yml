@@ -12,3 +12,4 @@ script:
  - python3 hwk7.py diabetes.data ' ' -p
  - python3 hwk7.py diabetes.data ' ' -s age
  - python3 hwk7.py diabetes.data ' ' -s ageeee
+ - python3 hwk7.py diabetes.data ' ' -i tc map 0.0345
