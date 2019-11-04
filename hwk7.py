@@ -88,9 +88,9 @@ def interp_f(funct,interpolate=False):
     if interpolate:
         assert interpolate[0] in funct.keys() , 'column name does not exist for interpolate'
         assert interpolate[1] in funct.keys() , 'column name does not exist for interpolate'
-        assert min(funct[interpolate[0]]) <= convert_type(interpolate[2]) <= max(funct[interpolate[0]]), 'use --summary to find the value'
         assert len(np.unique(funct[interpolate[0]]))/len(funct[interpolate[0]]) >  0.1 , 'first column is discrete'
         assert len(np.unique(funct[interpolate[1]]))/len(funct[interpolate[1]]) >  0.1 , 'second column is discrete'
+        assert min(funct[interpolate[0]]) <= convert_type(interpolate[2]) <= max(funct[interpolate[0]]), 'use --summary to find the value'
         for m in range(1,4):
             number = convert_type(interpolate[2])
             coef1 = np.polyfit(funct[interpolate[0]],funct[interpolate[1]],m)
