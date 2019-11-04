@@ -78,10 +78,11 @@ def col_name(col_head,summary=False):
             print('Column is categorical/discrete')
         else:
             print('Column is continuous')      
-        print(min(yep))
-        print(max(yep))
-        print(np.mean(yep))
-        print(np.std(yep))
+        print('min is '+ str(min(yep)))
+        print('max is ' + str(max(yep)))
+        print('mean is ' + str(np.mean(yep)))
+        print('std is ' + str(np.std(yep)))
+    
     
 def interp_f(funct,interpolate=False):
     if interpolate:
