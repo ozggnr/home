@@ -1,8 +1,6 @@
 language: python
 
 python:
- - 3.6
- - 3.5
  - 3.7
 
 before_install:
@@ -12,3 +10,4 @@ before_install:
 script:
  - python3 hwk7.py --help
  - python3 hwk7.py diabetes.data ' ' -p
+ - python3 hwk7.py diabetes.data ' ' -s age
